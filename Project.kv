@@ -1,0 +1,20 @@
+interface:
+    Label:
+        id:label
+        text:"Enter to See the text"
+        size_hint:(.5, .1)
+        pos_hint:{"center_x": 0.5, "center_y": 0.6}
+
+
+    TextInput:
+        id:textinput
+        size_hint:(0.5,0.1)
+        pos_hint:{"center_x": 0.5, "center_y": 0.5}
+        multiline:False
+        on_text_validate:root.DispayInterface()
+
+    Button:
+        text:"Click Me!"
+        size_hint:(0.5, 0.1)
+        pos_hint:{"center_x": 0.5, "center_y": 0.4}
+        on_press:root.DispayInterface()
